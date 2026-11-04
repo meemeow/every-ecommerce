@@ -1,0 +1,11 @@
+<header class="topbar">
+  <span class="logo">EVERY<span class="pin">📍</span></span>
+</header>
+
+<main class="hero">
+  <h1>Everything you need, near you.</h1>
+  <p class="status" [class]="backendStatus()">Backend: {{ backendStatus() }}</p>
+  <button class="btn-primary">Start shopping</button>
+</main>
+
+<router-outlet />

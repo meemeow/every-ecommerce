@@ -1,0 +1,28 @@
+.topbar {
+  background: var(--every-gradient);
+  padding: 1rem 1.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--every-text);
+}
+
+.pin { font-size: 1rem; margin-left: 0.15rem; }
+
+.hero {
+  max-width: 960px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+
+  h1 { font-size: 2.25rem; margin-bottom: 1rem; }
+}
+
+.status {
+  color: var(--every-subtext);
+  &.online  { color: var(--every-success); }
+  &.offline { color: var(--every-sale); }
+}

@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: every-backend
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/every}
+    username: ${DB_USERNAME:every}
+    password: ${DB_PASSWORD:every}
+  jpa:
+    hibernate:
+      ddl-auto: validate   # schema is managed by Flyway migrations
+    open-in-view: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: 8080
+
+app:
+  cors:
+    allowed-origins: ${CORS_ORIGINS:http://localhost:4200}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
